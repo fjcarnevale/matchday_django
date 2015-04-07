@@ -1,0 +1,9 @@
+{% if leagues %}
+  <ul>
+  {% for league in leagues %}
+    <li>{{ league.name }}</li>
+  </ul>
+  {% endfor %}
+{% else %}
+  <p>No leagues :(</p>
+{% endif %}
